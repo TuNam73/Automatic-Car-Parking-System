@@ -131,4 +131,4 @@ Bảng kết nối với các chân của esp32
 
 Sử dụng thành công giao thức MQTT để truyền/nhận dữ liệu giữa các thành phần hệ thống thông qua các broker (HiveMQ hoặc EMQX).
 
-## Video demo: [Video demo](https://youtu.be/6vYeLfkQ3tU)
+## Video demo: [Video demo](https://www.youtube.com/watch?v=NGZ4Gfc5JMc)
