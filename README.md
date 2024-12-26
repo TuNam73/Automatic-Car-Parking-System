@@ -129,5 +129,6 @@ Bảng kết nối với các chân của esp32
 - Tự động hóa quá trình ra/vào bằng cảm biến và cửa servo.
 - Tích hợp dashboard qua Node-RED để hiển thị và điều khiển.
 
+Sử dụng thành công giao thức MQTT để truyền/nhận dữ liệu giữa các thành phần hệ thống thông qua các broker (HiveMQ hoặc EMQX).
 
 ## Video demo: [Video demo](https://youtu.be/6vYeLfkQ3tU)

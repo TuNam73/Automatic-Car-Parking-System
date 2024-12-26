@@ -948,5 +948,24 @@
                 "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_control.js"
             }
         }
+    },
+    "node-red-contrib-mqtt-connection-check": {
+        "name": "node-red-contrib-mqtt-connection-check",
+        "version": "0.1.2",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "mqtt-check": {
+                "name": "mqtt-check",
+                "types": [
+                    "mqtt-check"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-mqtt-connection-check",
+                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-contrib-mqtt-connection-check\\check_mqtt_connection.js"
+            }
+        }
     }
 }

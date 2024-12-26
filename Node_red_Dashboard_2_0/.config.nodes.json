@@ -442,7 +442,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_base.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_base.js"
             },
             "ui_button": {
                 "name": "ui_button",
@@ -453,7 +453,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_button.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_button.js"
             },
             "ui_dropdown": {
                 "name": "ui_dropdown",
@@ -464,7 +464,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_dropdown.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_dropdown.js"
             },
             "ui_switch": {
                 "name": "ui_switch",
@@ -475,7 +475,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_switch.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_switch.js"
             },
             "ui_slider": {
                 "name": "ui_slider",
@@ -486,7 +486,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_slider.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_slider.js"
             },
             "ui_numeric": {
                 "name": "ui_numeric",
@@ -497,7 +497,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_numeric.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_numeric.js"
             },
             "ui_text_input": {
                 "name": "ui_text_input",
@@ -508,7 +508,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_text_input.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_text_input.js"
             },
             "ui_date_picker": {
                 "name": "ui_date_picker",
@@ -519,7 +519,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_date_picker.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_date_picker.js"
             },
             "ui_colour_picker": {
                 "name": "ui_colour_picker",
@@ -530,7 +530,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_colour_picker.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_colour_picker.js"
             },
             "ui_form": {
                 "name": "ui_form",
@@ -541,7 +541,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_form.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_form.js"
             },
             "ui_text": {
                 "name": "ui_text",
@@ -552,7 +552,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_text.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_text.js"
             },
             "ui_gauge": {
                 "name": "ui_gauge",
@@ -563,7 +563,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_gauge.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_gauge.js"
             },
             "ui_chart": {
                 "name": "ui_chart",
@@ -574,7 +574,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_chart.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_chart.js"
             },
             "ui_audio": {
                 "name": "ui_audio",
@@ -585,7 +585,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_audio.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_audio.js"
             },
             "ui_toast": {
                 "name": "ui_toast",
@@ -596,7 +596,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_toast.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_toast.js"
             },
             "ui_ui_control": {
                 "name": "ui_ui_control",
@@ -607,7 +607,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_ui_control.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_ui_control.js"
             },
             "ui_template": {
                 "name": "ui_template",
@@ -618,7 +618,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_template.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_template.js"
             },
             "ui_link": {
                 "name": "ui_link",
@@ -629,7 +629,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_link.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_link.js"
             },
             "ui_tab": {
                 "name": "ui_tab",
@@ -640,7 +640,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_tab.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_tab.js"
             },
             "ui_group": {
                 "name": "ui_group",
@@ -651,7 +651,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_group.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_group.js"
             },
             "ui_spacer": {
                 "name": "ui_spacer",
@@ -662,7 +662,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-dashboard\\nodes\\ui_spacer.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-dashboard\\nodes\\ui_spacer.js"
             }
         }
     },
@@ -681,7 +681,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\config\\ui_base.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\config\\ui_base.js"
             },
             "ui-page": {
                 "name": "ui-page",
@@ -692,7 +692,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\config\\ui_page.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\config\\ui_page.js"
             },
             "ui-link": {
                 "name": "ui-link",
@@ -703,7 +703,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\config\\ui_link.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\config\\ui_link.js"
             },
             "ui-group": {
                 "name": "ui-group",
@@ -714,7 +714,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\config\\ui_group.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\config\\ui_group.js"
             },
             "ui-theme": {
                 "name": "ui-theme",
@@ -725,7 +725,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\config\\ui_theme.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\config\\ui_theme.js"
             },
             "ui-form": {
                 "name": "ui-form",
@@ -736,7 +736,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_form.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_form.js"
             },
             "ui-text-input": {
                 "name": "ui-text-input",
@@ -747,7 +747,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_text_input.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_text_input.js"
             },
             "ui-number-input": {
                 "name": "ui-number-input",
@@ -758,7 +758,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_number_input.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_number_input.js"
             },
             "ui-file-input": {
                 "name": "ui-file-input",
@@ -769,7 +769,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_file_input.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_file_input.js"
             },
             "ui-button": {
                 "name": "ui-button",
@@ -780,7 +780,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_button.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_button.js"
             },
             "ui-button-group": {
                 "name": "ui-button-group",
@@ -791,7 +791,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_button_group.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_button_group.js"
             },
             "ui-dropdown": {
                 "name": "ui-dropdown",
@@ -802,7 +802,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_dropdown.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_dropdown.js"
             },
             "ui-radio-group": {
                 "name": "ui-radio-group",
@@ -813,7 +813,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_radio_group.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_radio_group.js"
             },
             "ui-slider": {
                 "name": "ui-slider",
@@ -824,7 +824,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_slider.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_slider.js"
             },
             "ui-spacer": {
                 "name": "ui-spacer",
@@ -835,7 +835,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_spacer.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_spacer.js"
             },
             "ui-switch": {
                 "name": "ui-switch",
@@ -846,7 +846,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_switch.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_switch.js"
             },
             "ui-text": {
                 "name": "ui-text",
@@ -857,7 +857,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_text.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_text.js"
             },
             "ui-table": {
                 "name": "ui-table",
@@ -868,7 +868,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_table.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_table.js"
             },
             "ui-chart": {
                 "name": "ui-chart",
@@ -879,7 +879,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_chart.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_chart.js"
             },
             "ui-gauge": {
                 "name": "ui-gauge",
@@ -890,7 +890,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_gauge.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_gauge.js"
             },
             "ui-notification": {
                 "name": "ui-notification",
@@ -901,7 +901,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_notification.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_notification.js"
             },
             "ui-markdown": {
                 "name": "ui-markdown",
@@ -912,7 +912,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_markdown.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_markdown.js"
             },
             "ui-template": {
                 "name": "ui-template",
@@ -923,7 +923,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_template.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_template.js"
             },
             "ui-event": {
                 "name": "ui-event",
@@ -934,7 +934,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_event.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_event.js"
             },
             "ui-control": {
                 "name": "ui-control",
@@ -945,7 +945,7 @@
                 "local": true,
                 "user": false,
                 "module": "@flowfuse/node-red-dashboard",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_control.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\@flowfuse\\node-red-dashboard\\nodes\\widgets\\ui_control.js"
             }
         }
     },
@@ -964,7 +964,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-mqtt-connection-check",
-                "file": "D:\\Test_project\\Test_project_nodered\\node_modules\\node-red-contrib-mqtt-connection-check\\check_mqtt_connection.js"
+                "file": "D:\\Git\\Car Parking System\\Node_red_Dashboard_2_0\\node_modules\\node-red-contrib-mqtt-connection-check\\check_mqtt_connection.js"
             }
         }
     }
