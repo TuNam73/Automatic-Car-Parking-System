@@ -1,0 +1,25 @@
+BÃI ĐỖ XE
+
+Phần cứng:
+- MCU        : 1 x ESP32
+- Cửa vào/ra : 2 x SG90 + 1 x IR
+- 4 bãi đỗ xe: 4 x Cảm biến siêu âm + 2 x LDR + (4 x RGB) + (1 x DHT22 + 1 x MQ2 + 1 x buzzer)
+- (Có thể thêm RFID)
+
+Phần mềm:
+- Node-red: 
+	+ Hiển thị: số lượng xe; vị trí trống, đỗ
+	+ Quản lí : thời gian xe đỗ, bật/tắt đèn, đóng/mở cửa
+	+ (Kiểm tra an toàn bãi đỗ xe: kiểm tra nhiệt độ, độ ẩm, khí ga)
+	+ (Chức năng đặt trước chỗ trống trên Dashboard)
+- Platform.IO
+
+Ý tưởng: 
+- Cửa ra/vào: + Cảm biến IR được sử dụng để phát hiện xe ra/vào và kích hoạt servo sg90 mở/đóng
+	      + Trên dashboard có thể kích hoạt mở/đóng servo sg90
+- Bãi đỗ    : + 4 bãi đỗ xe -> 4 cảm biến siêu âm để kiểm tra vị trí trống/có xe
+	      + Hiển thị trạng thái của từng vị trí trên dashboard: trống/có xe/ (đã đặt trước) 
+	      + Hiển thị thời gian đỗ xe
+	      + LDR bật led khi trời tối / dashboard cũng có thể bật led
+	      + (Đo nhiệt độ, độ ẩm, khí ga của bãi đỗ xe + buzzer cảnh báo)
+	      + (Nếu có chức năng đặt trước trên dashboard, sử dụng rgb để nhận biết trạng thái từng vị trí)

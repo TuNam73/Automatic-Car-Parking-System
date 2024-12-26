@@ -1,0 +1,12 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "@flowfuse/node-red-dashboard": "~1.19.1",
+        "@flowfuse/node-red-dashboard-2-user-addon": "~1.1.0",
+        "node-red-contrib-mqtt-connection-check": "~0.1.2",
+        "node-red-dashboard": "~3.6.5"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "_": {
+        "editor": {
+            "view": {
+                "view-store-zoom": false,
+                "view-store-position": false,
+                "view-show-grid": true,
+                "view-snap-grid": true,
+                "view-grid-size": "20",
+                "view-node-status": true,
+                "view-node-show-label": true,
+                "view-show-tips": true,
+                "view-show-welcome-tours": true
+            },
+            "tours": {
+                "welcome": "4.0.2"
+            },
+            "dialog": {
+                "export": {
+                    "pretty": true,
+                    "json-view": true
+                }
+            }
+        },
+        "debug": {
+            "filter": "filterSelected",
+            "filteredNodes": [
+                "d37b369d93ddf0cb",
+                "877356fbb41db2e6",
+                "d7d9e17bedfaa130"
+            ]
+        }
+    }
+}

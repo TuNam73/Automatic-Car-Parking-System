@@ -1,0 +1,2823 @@
+[
+    {
+        "id": "fb91d1d8336e4c7f",
+        "type": "tab",
+        "label": "Home",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "00028812804b1904",
+        "type": "tab",
+        "label": "Door",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "eeef9c039e59f64e",
+        "type": "tab",
+        "label": "Temp/Huma/Gas",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "59548a715e5b82ac",
+        "type": "tab",
+        "label": "LDR",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "52ca15396477339d",
+        "type": "tab",
+        "label": "Parking",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "02c77d8078795f69",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "fe2295c97ad634b1",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "c72339f4.ala.eu-central-1.emqxsl.com",
+        "port": "8883",
+        "tls": "255f7c355e83a469",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "255f7c355e83a469",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "emqxsl-ca.crt",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "a7dd76d3351c3b28",
+        "type": "ui_tab",
+        "name": "Vehicles Count",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "63ef07ba012f0932",
+        "type": "ui_group",
+        "name": "Chart of Vehicles following time",
+        "tab": "a7dd76d3351c3b28",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e9093d350f74b52d",
+        "type": "ui_group",
+        "name": "Number of Vehicles",
+        "tab": "a7dd76d3351c3b28",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5dd1bca948442833",
+        "type": "ui_tab",
+        "name": "Control Door",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "18d9a4554244bce3",
+        "type": "ui_group",
+        "name": "Control Entry",
+        "tab": "5dd1bca948442833",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1201125a7dd9913a",
+        "type": "ui_group",
+        "name": "Control Exit",
+        "tab": "5dd1bca948442833",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "623e7d816755465c",
+        "type": "ui_group",
+        "name": "Status Entry",
+        "tab": "5dd1bca948442833",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "113a2cbb4fe2e867",
+        "type": "ui_group",
+        "name": "Status Exit",
+        "tab": "5dd1bca948442833",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "72f2d98f56def7f7",
+        "type": "ui_tab",
+        "name": "Temperature/Humadity/Gas",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bc26032cf4ac47de",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "showPageTitle": true,
+        "navigationStyle": "default",
+        "titleBarStyle": "default"
+    },
+    {
+        "id": "eeb505e4a2518d02",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#9bbe3c",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "f77fc38b5eeef9eb",
+        "type": "ui-page",
+        "name": "Temperature/Humadity/Gas",
+        "ui": "bc26032cf4ac47de",
+        "path": "/page1",
+        "icon": "home-thermometer-outline",
+        "layout": "grid",
+        "theme": "eeb505e4a2518d02",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": true,
+        "disabled": "false"
+    },
+    {
+        "id": "ace78fe2d9b0df50",
+        "type": "ui-group",
+        "name": "Temperature",
+        "page": "f77fc38b5eeef9eb",
+        "width": "4",
+        "height": "1",
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f0080a82b7bca4f2",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "72f2d98f56def7f7",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4513340dc1889f1c",
+        "type": "ui_group",
+        "name": "Humadity (%)",
+        "tab": "72f2d98f56def7f7",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3f6f5dbef4449c95",
+        "type": "ui_group",
+        "name": "Gas",
+        "tab": "72f2d98f56def7f7",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "461c46d039b06d98",
+        "type": "ui-group",
+        "name": "Humadity",
+        "page": "f77fc38b5eeef9eb",
+        "width": "4",
+        "height": "1",
+        "order": 6,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "cd178e09a80fb3aa",
+        "type": "ui-group",
+        "name": "Gas",
+        "page": "f77fc38b5eeef9eb",
+        "width": "4",
+        "height": "1",
+        "order": 7,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "c5a50e1f98a56e3d",
+        "type": "ui-page",
+        "name": "Home",
+        "ui": "bc26032cf4ac47de",
+        "path": "/page2",
+        "icon": "home-circle-outline",
+        "layout": "grid",
+        "theme": "eeb505e4a2518d02",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "b0727d62dbd8e01e",
+        "type": "ui-group",
+        "name": "Home",
+        "page": "c5a50e1f98a56e3d",
+        "width": "4",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "fe8395d824af5df4",
+        "type": "ui-group",
+        "name": "Statistics",
+        "page": "c5a50e1f98a56e3d",
+        "width": "4",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "a908f374bc070f47",
+        "type": "ui-page",
+        "name": "Door Status",
+        "ui": "bc26032cf4ac47de",
+        "path": "/page3",
+        "icon": "door-sliding",
+        "layout": "grid",
+        "theme": "eeb505e4a2518d02",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "23021331f88adc73",
+        "type": "ui-group",
+        "name": "Control EXIT",
+        "page": "a908f374bc070f47",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f9a8c914deb098db",
+        "type": "ui-group",
+        "name": "Control ENTRY",
+        "page": "a908f374bc070f47",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "dc21db853f8c4eea",
+        "type": "ui-page",
+        "name": "Brighness",
+        "ui": "bc26032cf4ac47de",
+        "path": "/page4",
+        "icon": "brightness-4",
+        "layout": "grid",
+        "theme": "eeb505e4a2518d02",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 5,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "0d776a416ed024cc",
+        "type": "ui-group",
+        "name": "Status Light 1",
+        "page": "dc21db853f8c4eea",
+        "width": 6,
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "0afd0bd52a321c10",
+        "type": "ui-group",
+        "name": "Brightness",
+        "page": "dc21db853f8c4eea",
+        "width": 6,
+        "height": "2",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d302e0aa3f39327e",
+        "type": "ui_group",
+        "name": "Default1",
+        "tab": "314ff0f431b44697",
+        "order": 1,
+        "disp": true,
+        "width": 26,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "314ff0f431b44697",
+        "type": "ui_tab",
+        "name": "Home1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4f40137b216d5d5b",
+        "type": "ui-page",
+        "name": "Position",
+        "ui": "bc26032cf4ac47de",
+        "path": "/page5",
+        "icon": "parking",
+        "layout": "grid",
+        "theme": "eeb505e4a2518d02",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "07c5be3bfbb6912e",
+        "type": "ui-group",
+        "name": "Parking car",
+        "page": "4f40137b216d5d5b",
+        "width": "26",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "group1",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "dashboard",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "dashboard",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "78d940519e388a8b",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#4cbfe6",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "684392cc1527bd04",
+        "type": "ui-theme",
+        "name": "Theme Name",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "623ff1c5e1dc9bab",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeded",
+            "groupBg": "#ffffff",
+            "groupOutline": "#f3f1f1"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px",
+            "density": "default"
+        }
+    },
+    {
+        "id": "129e99574def90a3",
+        "type": "ui-theme",
+        "name": "Another Theme",
+        "colors": {
+            "surface": "#000000",
+            "primary": "#ff4000",
+            "bgPage": "#f0f0f0",
+            "groupBg": "#ffffff",
+            "groupOutline": "#d9d9d9"
+        },
+        "sizes": {
+            "pagePadding": "9px",
+            "groupGap": "12px",
+            "groupBorderRadius": "9px",
+            "widgetGap": "6px"
+        }
+    },
+    {
+        "id": "0d69953b24dd8e4e",
+        "type": "ui-group",
+        "name": "Reserved",
+        "page": "4f40137b216d5d5b",
+        "width": "26",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "df73208929ef36e6",
+        "type": "ui-group",
+        "name": "Current Temperature (°C)",
+        "page": "f77fc38b5eeef9eb",
+        "width": "4",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "71d514fb4c02faed",
+        "type": "ui-group",
+        "name": "Safety levels",
+        "page": "f77fc38b5eeef9eb",
+        "width": "13",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1c4e18658b9e07a2",
+        "type": "ui-group",
+        "name": "Current Humadity (%)",
+        "page": "f77fc38b5eeef9eb",
+        "width": "4",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b3a81414e1dc632e",
+        "type": "ui-group",
+        "name": "Current Gas value",
+        "page": "f77fc38b5eeef9eb",
+        "width": "4",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "fa567803259daa00",
+        "type": "ui-group",
+        "name": "Status Light 2",
+        "page": "dc21db853f8c4eea",
+        "width": 6,
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "024d452054312c66",
+        "type": "ui-group",
+        "name": "Gauge",
+        "page": "dc21db853f8c4eea",
+        "width": 6,
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "520896fd6c92baf1",
+        "type": "ui-spacer",
+        "group": "23021331f88adc73",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "className": ""
+    },
+    {
+        "id": "097b78b782c15a7d",
+        "type": "ui-spacer",
+        "group": "23021331f88adc73",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "className": ""
+    },
+    {
+        "id": "9174548e3b53a46c",
+        "type": "ui-spacer",
+        "group": "f9a8c914deb098db",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "className": ""
+    },
+    {
+        "id": "7a25c14d96d33e8e",
+        "type": "ui-spacer",
+        "group": "f9a8c914deb098db",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 4,
+        "width": "1",
+        "height": "1",
+        "className": ""
+    },
+    {
+        "id": "8285180075df084b",
+        "type": "ui-group",
+        "name": "Status",
+        "page": "c5a50e1f98a56e3d",
+        "width": "4",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2d435b8eea139a66",
+        "type": "ui-spacer",
+        "group": "fe8395d824af5df4",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "className": ""
+    },
+    {
+        "id": "5ea164076977908d",
+        "type": "ui-spacer",
+        "group": "8285180075df084b",
+        "name": "MQTT",
+        "tooltip": "",
+        "order": 1,
+        "width": "1",
+        "height": "1",
+        "className": ""
+    },
+    {
+        "id": "244b73900fdfb98c",
+        "type": "mqtt in",
+        "z": "fb91d1d8336e4c7f",
+        "name": "",
+        "topic": "home/vehicles_count",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "fe2295c97ad634b1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "6f18d4a670299a01",
+                "e3079da88a079e00"
+            ]
+        ]
+    },
+    {
+        "id": "6f18d4a670299a01",
+        "type": "ui-chart",
+        "z": "fb91d1d8336e4c7f",
+        "group": "fe8395d824af5df4",
+        "name": "Quantity following time",
+        "label": "chart",
+        "order": 4,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "4",
+        "height": "6",
+        "className": "",
+        "interpolation": "linear",
+        "x": 420,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3079da88a079e00",
+        "type": "ui-text",
+        "z": "fb91d1d8336e4c7f",
+        "group": "fe8395d824af5df4",
+        "order": 3,
+        "width": "4",
+        "height": "2",
+        "name": "Number Vehicles",
+        "label": "Numbers vehicles: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 410,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "7fd8b816ff4d3efe",
+        "type": "ui-template",
+        "z": "fb91d1d8336e4c7f",
+        "group": "fe8395d824af5df4",
+        "page": "",
+        "ui": "",
+        "name": "Image",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"container\">\n    <div class=\"image-box\">\n      <img \n        src=\"/home.png\" \n        alt=\"Home Image\" \n        class=\"image\"\n      />\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: \"SingleImageDisplay\",\n};\n</script>\n\n<style scoped>\n/* Container bao quanh */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 38vh; \n  background-color: #f9f9f9;\n  margin: 0;\n}\n\n/* Khung hình */\n.image-box {\n  border: 2px solid #ccc;\n  border-radius: 10px;\n  padding: 10px;\n  background-color: #fff;\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n  width: auto; \n  height: 100%; \n  display: flex;\n  justify-content: center;\n  align-items: center;\n  box-sizing: border-box;\n}\n\n\n.image {\n  max-width: 100%; \n  max-height: 100%;\n  object-fit: contain; \n  display: block;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 630,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9cb8668931dfcfcb",
+        "type": "ui-template",
+        "z": "fb91d1d8336e4c7f",
+        "group": "b0727d62dbd8e01e",
+        "page": "",
+        "ui": "",
+        "name": "Home",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"main-container\">\n    <div class=\"clock-box\">\n      <p class=\"clock\">{{ time }}</p>\n    </div>\n\n    <hr class=\"divider\" />\n\n    <div class=\"author-box-left\">\n      <p class=\"author\">Designed by:</p>\n    </div>\n\n    <div class=\"author-box\">\n      <p class=\"name\">Tu Van Hoai Nam</p>\n    </div>\n\n    <hr class=\"divider\" />\n\n    <div class=\"image-box\">\n      <img src=\"/author.png\" alt=\"Home\" class=\"circle-image\" />\n    </div>\n\n    <hr class=\"divider\" />\n\n    <div class=\"contact-box\">\n      <p class=\"contact\">Contact:</p>\n    </div>\n\n    <div class=\"github-box\">\n      <p class=\"github\">GitHub: <a href=\"https://github.com/TuNam73\" target=\"_blank\">https://github.com/TuNam73</a></p>\n    </div>\n\n    <div class=\"email-box\">\n      <p class=\"email\">Email: <a href=\"\">kenztu2003@gmail.comm</a></p>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: \"ClockWithImage\",\n  data() {\n    return {\n      time: this.getCurrentTime(),\n    };\n  },\n  methods: {\n    getCurrentTime() {\n      const now = new Date();\n      const hours = String(now.getHours()).padStart(2, \"0\");\n      const minutes = String(now.getMinutes()).padStart(2, \"0\");\n      const seconds = String(now.getSeconds()).padStart(2, \"0\");\n      return `${hours}:${minutes}:${seconds}`;\n    },\n    updateTime() {\n      this.time = this.getCurrentTime();\n    },\n  },\n  mounted() {\n    this.interval = setInterval(this.updateTime, 1000);\n  },\n  beforeDestroy() {\n    clearInterval(this.interval);\n  },\n};\n</script>\n\n<style scoped>\n.main-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 20px;\n  padding: 20px;\n  background-color: #ffffff;\n  min-height: 100vh;\n  box-sizing: border-box;\n}\n\n/* Đồng hồ */\n.clock-box {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  background-color: #fff;\n  padding: 10px;\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n}\n\n.clock {\n  font-size: 3.5rem;\n  font-family: 'Courier New', Courier, monospace;\n  font-weight: bold;\n  color: #333;\n}\n\n/* Thanh phân chia */\n.divider {\n  width: 100%;\n  border: none;\n  height: 2px;\n  background-color: #ccc;\n}\n\n/* Designed by */\n.author-box-left {\n  text-align: left;\n  width: 100%;\n}\n\n.author {\n  font-size: 1rem; \n  font-family: 'Arial', sans-serif;\n  font-weight: normal; \n  color: #000; \n}\n\n.author-box {\n  text-align: center;\n}\n\n.name {\n  font-size: 1.8rem;\n  font-family: 'Arial', sans-serif;\n  font-style: italic;\n  font-weight: bold;\n  color: #333;\n}\n\n/* Hình ảnh */\n.image-box {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n}\n\n.circle-image {\n  width: 250px;\n  height: 250px;\n  object-fit: cover;\n  border-radius: 50%;\n  overflow: hidden;\n  border: none;\n}\n\n/* Contact */\n.contact-box {\n  text-align: left;\n  width: 100%;\n}\n\n.contact {\n  font-size: 1rem;\n  font-family: 'Arial', sans-serif;\n  color: #000;\n  font-weight: normal;\n}\n\n/* GitHub */\n.github-box {\n  text-align: left;\n  width: 100%;\n}\n\n.github {\n  font-size: 1.2rem;\n  font-family: 'Arial', sans-serif;\n  color: #555;\n}\n\n.github a {\n  color: #0073e6;\n  text-decoration: none;\n}\n\n.github a:hover {\n  text-decoration: underline;\n}\n\n/* Email */\n.email-box {\n  text-align: left;\n  width: 100%;\n}\n\n.email {\n  font-size: 1.2rem;\n  font-family: 'Arial', sans-serif;\n  color: #555;\n}\n\n.email a {\n  color: #0073e6;\n  text-decoration: none;\n}\n\n.email a:hover {\n  text-decoration: underline;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18e0283c1418aad6",
+        "type": "function",
+        "z": "fb91d1d8336e4c7f",
+        "name": "function 16",
+        "func": "// Thời gian timeout: 5 giây\nconst timeout = 5000;\n\n// Lấy thời gian hiện tại\nconst currentTime = Date.now();\n\n// Lấy thời gian nhận thông điệp \"Connected\" lần cuối từ context\nconst lastConnectedTime = context.get('lastConnectedTime') || 0;\n\n// Nếu nhận được payload \"Connected\", cập nhật thời gian\nif (msg.payload === \"Connected\") {\n  context.set('lastConnectedTime', currentTime);\n  return { payload: \"Connected\" }; // Gửi ra \"Connected\"\n}\n\n// Nếu không nhận được \"Connected\" trong 5 giây, gửi \"Disconnected\"\nif (currentTime - lastConnectedTime > timeout) {\n  return { payload: \"Disconnected\" }; // Gửi ra \"Disconnected\"\n}\n\n// Nếu không có gì để gửi, trả về null\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 260,
+        "wires": [
+            [
+                "f5afdbbcf17f4cd9"
+            ]
+        ]
+    },
+    {
+        "id": "9230017701395894",
+        "type": "comment",
+        "z": "fb91d1d8336e4c7f",
+        "name": "Check MQTT Broker",
+        "info": "",
+        "x": 90,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f5afdbbcf17f4cd9",
+        "type": "ui-template",
+        "z": "fb91d1d8336e4c7f",
+        "group": "8285180075df084b",
+        "page": "",
+        "ui": "",
+        "name": "Check MQTT",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"mqtt-status-container\">\n    <hr class=\"divider\">\n\n    <p class=\"mqtt-label\">MQTT</p>\n    <p class=\"mqtt-status\" :class=\"{\n        'connected': status === 'Connected',\n        'disconnected': status !== 'Connected'\n      }\">\n      {{ statusMessage }}\n    </p>\n  </div>\n</template>\n\n<script>\n  export default {\n  data() {\n    return {\n      status: \"\", \n    };\n  },\n  computed: {\n    statusMessage() {\n      return this.status === \"Connected\" ? \"Connected\" : \"Disconnect\";\n    },\n  },\n  methods: {\n    updateStatus(msg) {\n      this.status = msg.payload || \"\"; \n    },\n  },\n  mounted() {\n    this.$watch(\"msg\", (newMsg) => {\n      if (newMsg && newMsg.payload) {\n        this.updateStatus(newMsg);\n      }\n    });\n  },\n};\n</script>\n\n<style scoped>\n  .mqtt-status-container {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    height: 60px;\n    padding: 0px;\n    font-family: Arial, sans-serif;\n  }\n\n.divider {\n  width: 100%;\n  border-top: 2px solid #ddd; \n  margin: 10px 0; \n}\n\n  .mqtt-label {\n    font-size: 20px;\n    font-weight: bold;\n    color: black;\n    text-align: left;\n    margin: 0;\n    padding-top: 5px;\n  }\n\n  .mqtt-status {\n    font-size: 24px;\n    font-weight: bold;\n    text-align: center;\n    margin: 0;\n    transition: color 0.3s ease;\n  }\n\n  .mqtt-status.connected {\n    color: green;\n  }\n\n  .mqtt-status.disconnected {\n    color: red;\n  }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 850,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8bd717e40b84a439",
+        "type": "mqtt out",
+        "z": "fb91d1d8336e4c7f",
+        "name": "",
+        "topic": "home/check_connect",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fe2295c97ad634b1",
+        "x": 300,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "2a54ad57f3dfa5fa",
+        "type": "inject",
+        "z": "fb91d1d8336e4c7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Connected",
+        "payloadType": "str",
+        "x": 70,
+        "y": 220,
+        "wires": [
+            [
+                "8bd717e40b84a439"
+            ]
+        ]
+    },
+    {
+        "id": "adf400e96b6874cf",
+        "type": "mqtt in",
+        "z": "fb91d1d8336e4c7f",
+        "name": "",
+        "topic": "home/check_connect",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "fe2295c97ad634b1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 460,
+        "y": 280,
+        "wires": [
+            [
+                "18e0283c1418aad6"
+            ]
+        ]
+    },
+    {
+        "id": "fde9847b4277e5b7",
+        "type": "inject",
+        "z": "fb91d1d8336e4c7f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "null",
+        "payloadType": "str",
+        "x": 510,
+        "y": 220,
+        "wires": [
+            [
+                "18e0283c1418aad6"
+            ]
+        ]
+    },
+    {
+        "id": "02c3b05279083dc9",
+        "type": "mqtt out",
+        "z": "00028812804b1904",
+        "name": "",
+        "topic": "home/entry",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fe2295c97ad634b1",
+        "x": 890,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "18e5e4e099a5d740",
+        "type": "mqtt out",
+        "z": "00028812804b1904",
+        "name": "",
+        "topic": "home/exit",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fe2295c97ad634b1",
+        "x": 400,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "6e7bc906bcf3c9c3",
+        "type": "mqtt in",
+        "z": "00028812804b1904",
+        "name": "",
+        "topic": "home/exit",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "fe2295c97ad634b1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 240,
+        "wires": [
+            [
+                "8dab44b8bfadab8c"
+            ]
+        ]
+    },
+    {
+        "id": "0b23228dd7f97057",
+        "type": "mqtt in",
+        "z": "00028812804b1904",
+        "name": "",
+        "topic": "home/entry",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "fe2295c97ad634b1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 600,
+        "y": 240,
+        "wires": [
+            [
+                "803e6fee68a0acae"
+            ]
+        ]
+    },
+    {
+        "id": "8dab44b8bfadab8c",
+        "type": "function",
+        "z": "00028812804b1904",
+        "name": "function 8",
+        "func": "if (msg.payload == \"1\") {\n    msg.payload = \"OPENING\";\n} else {\n    msg.payload = \"CLOSING\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "673931b0bdfb2df8"
+            ]
+        ]
+    },
+    {
+        "id": "803e6fee68a0acae",
+        "type": "function",
+        "z": "00028812804b1904",
+        "name": "function 10",
+        "func": "if (msg.payload == \"1\") {\n    msg.payload = \"OPENING\";\n} else {\n    msg.payload = \"CLOSING\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 240,
+        "wires": [
+            [
+                "43bc14be9733498a"
+            ]
+        ]
+    },
+    {
+        "id": "bbbf3d4705f3083d",
+        "type": "ui-button",
+        "z": "00028812804b1904",
+        "group": "23021331f88adc73",
+        "name": "Open Exit",
+        "label": "Open Exit",
+        "order": 2,
+        "width": "3",
+        "height": "2",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "home/exit",
+        "topicType": "msg",
+        "buttonColor": "green",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 180,
+        "y": 60,
+        "wires": [
+            [
+                "18e5e4e099a5d740"
+            ]
+        ]
+    },
+    {
+        "id": "4ea9d97d0127dd4a",
+        "type": "ui-button",
+        "z": "00028812804b1904",
+        "group": "23021331f88adc73",
+        "name": "Close Exit",
+        "label": "Close Exit",
+        "order": 3,
+        "width": "3",
+        "height": "2",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "home/exit",
+        "topicType": "msg",
+        "buttonColor": "red",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "18e5e4e099a5d740"
+            ]
+        ]
+    },
+    {
+        "id": "7a1d5e09b2fc29a4",
+        "type": "ui-button",
+        "z": "00028812804b1904",
+        "group": "f9a8c914deb098db",
+        "name": "Open Entry",
+        "label": "Open Entry",
+        "order": 2,
+        "width": "3",
+        "height": "2",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "home/entry",
+        "topicType": "msg",
+        "buttonColor": "green",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 690,
+        "y": 60,
+        "wires": [
+            [
+                "02c3b05279083dc9"
+            ]
+        ]
+    },
+    {
+        "id": "584cacdaa745ec93",
+        "type": "ui-button",
+        "z": "00028812804b1904",
+        "group": "f9a8c914deb098db",
+        "name": "Close Entry",
+        "label": "Close Entry",
+        "order": 3,
+        "width": "3",
+        "height": "2",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "home/entry",
+        "topicType": "msg",
+        "buttonColor": "red",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 690,
+        "y": 120,
+        "wires": [
+            [
+                "02c3b05279083dc9"
+            ]
+        ]
+    },
+    {
+        "id": "43bc14be9733498a",
+        "type": "ui-template",
+        "z": "00028812804b1904",
+        "group": "f9a8c914deb098db",
+        "page": "",
+        "ui": "",
+        "name": "Entry",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"barrier-container\">\n    <!-- Cột trụ -->\n    <div class=\"pillar\">\n      <div class=\"pillar-button\"></div> \n    </div>\n\n    <div class=\"barrier\" :class=\"{ 'opening': status === 'OPENING', 'closing': status === 'CLOSING' }\"></div>\n\n    <p\n      class=\"status-text\"\n      :class=\"{\n        'barrier-opening': status === 'OPENING',\n        'barrier-closing': status === 'CLOSING'\n      }\"\n    >\n      {{ statusMessage }}\n    </p>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      status: \"CLOSING\", \n    };\n  },\n  computed: {\n    statusMessage() {\n\n      if (this.status === \"OPENING\") return \"ENTRY OPENING\";\n      if (this.status === \"CLOSING\") return \"ENTRY CLOSING\";\n      return \"\";\n    },\n  },\n  methods: {\n    updateStatus(msg) {\n      const validStatuses = [\"OPENING\", \"CLOSING\"];\n      if (validStatuses.includes(msg.payload)) {\n        this.status = msg.payload;\n      }\n    },\n  },\n  mounted() {\n    this.$watch(\"msg\", (newMsg) => {\n      if (newMsg && newMsg.payload) {\n        this.updateStatus(newMsg);\n      }\n    });\n  },\n};\n</script>\n\n<style scoped>\n.barrier-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: 250px;\n  position: relative;\n}\n\n/* Cột trụ */\n.pillar {\n  width: 50px;\n  height: 120px;\n  background-color: yellow;\n  position: absolute;\n  bottom: 100px;\n  left: 50px;\n  border: 2px solid black;\n  border-radius: 5px;\n  display: flex;\n  justify-content: center;\n  align-items: flex-start;\n}\n\n.pillar-button {\n  width: 12px;\n  height: 12px;\n  background-color: white;\n  border: 1px solid black;\n  border-radius: 50%;\n  margin-top: 5px;\n}\n\n.barrier {\n  width: 290px;\n  height: 20px;\n  position: absolute;\n  bottom: 145px;\n  left: 70px;\n  background: repeating-linear-gradient(\n    90deg,\n    white,\n    white 20px,\n    red 20px,\n    red 40px\n  ); \n  transform-origin: left center; \n  transition: transform 0.5s ease;\n  border: 1px solid black;\n}\n\n.barrier.opening {\n  transform: rotate(-70deg);\n}\n\n.barrier.closing {\n  transform: rotate(0deg); \n}\n\n.status-text {\n  font-size: 20px;\n  font-weight: bold;\n  margin-top: 120px;\n  transition: color 0.3s ease;\n}\n\n.status-text.barrier-opening {\n  color: green; \n}\n\n.status-text.barrier-closing {\n  color: red;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "673931b0bdfb2df8",
+        "type": "ui-template",
+        "z": "00028812804b1904",
+        "group": "23021331f88adc73",
+        "page": "",
+        "ui": "",
+        "name": "Exit",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"exit-barrier-container\">\n    <div class=\"exit-pillar\">\n      <div class=\"exit-pillar-button\"></div> \n    </div>\n    <div class=\"exit-barrier\" :class=\"{ 'exit-opening': exitStatus === 'OPENING', 'exit-closing': exitStatus === 'CLOSING' }\"></div>\n    <p\n      class=\"exit-status-text\"\n      :class=\"{\n        'exit-barrier-opening': exitStatus === 'OPENING',\n        'exit-barrier-closing': exitStatus === 'CLOSING'\n      }\"\n    >\n      {{ exitStatusMessage }}\n    </p>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      exitStatus: \"CLOSING\", \n    };\n  },\n  computed: {\n    exitStatusMessage() {\n      if (this.exitStatus === \"OPENING\") return \"EXIT OPENING\";\n      if (this.exitStatus === \"CLOSING\") return \"EXIT CLOSING\";\n      return \"\"; \n    },\n  },\n  methods: {\n    updateExitStatus(msg) {\n      const validStatuses = [\"OPENING\", \"CLOSING\"];\n      if (validStatuses.includes(msg.payload)) {\n        this.exitStatus = msg.payload;\n      }\n    },\n  },\n  mounted() {\n    this.$watch(\"msg\", (newMsg) => {\n      if (newMsg && newMsg.payload) {\n        this.updateExitStatus(newMsg);\n      }\n    });\n  },\n};\n</script>\n\n<style scoped>\n.exit-barrier-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: 250px;\n  position: relative;\n}\n\n/* Cột trụ */\n.exit-pillar {\n  width: 50px;\n  height: 120px;\n  background-color: yellow; \n  position: absolute;\n  bottom: 100px;\n  right: 50px; \n  border: 2px solid black;\n  border-radius: 5px;\n  display: flex;\n  justify-content: center;\n  align-items: flex-start;\n}\n\n.exit-pillar-button {\n  width: 12px;\n  height: 12px;\n  background-color: white;\n  border: 1px solid black;\n  border-radius: 50%;\n  margin-top: 5px;\n}\n\n/* Thanh barrier */\n.exit-barrier {\n  width: 290px;\n  height: 20px;\n  position: absolute;\n  bottom: 145px;\n  right: 70px; \n  background: repeating-linear-gradient(\n    90deg,\n    white,\n    white 20px,\n    red 20px,\n    red 40px\n  ); \n  transform-origin: right center; \n  transition: transform 0.5s ease;\n  border: 1px solid black;\n}\n\n.exit-barrier.exit-opening {\n  transform: rotate(70deg);\n}\n\n.exit-barrier.exit-closing {\n  transform: rotate(0deg);\n}\n\n.exit-status-text {\n  font-size: 20px;\n  font-weight: bold;\n  margin-top: 120px;\n  transition: color 0.3s ease;\n}\n\n.exit-status-text.exit-barrier-opening {\n  color: green;\n}\n\n.exit-status-text.exit-barrier-closing {\n  color: red; \n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 410,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d37b369d93ddf0cb",
+        "type": "debug",
+        "z": "eeef9c039e59f64e",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "877356fbb41db2e6",
+        "type": "debug",
+        "z": "eeef9c039e59f64e",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "d7d9e17bedfaa130",
+        "type": "debug",
+        "z": "eeef9c039e59f64e",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "ea816ce845136beb",
+        "type": "ui-chart",
+        "z": "eeef9c039e59f64e",
+        "group": "ace78fe2d9b0df50",
+        "name": "Temperature",
+        "label": "chart",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 410,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bef385df931ca121",
+        "type": "ui-gauge",
+        "z": "eeef9c039e59f64e",
+        "name": "Temperature",
+        "group": "ace78fe2d9b0df50",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "gauge",
+        "units": "°C",
+        "icon": "thermometer",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 410,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "46daf851d568a479",
+        "type": "ui-chart",
+        "z": "eeef9c039e59f64e",
+        "group": "461c46d039b06d98",
+        "name": "Humadity",
+        "label": "chart",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 400,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d7552ca9e6e0c777",
+        "type": "ui-gauge",
+        "z": "eeef9c039e59f64e",
+        "name": "Humadity",
+        "group": "461c46d039b06d98",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "gauge",
+        "units": "%",
+        "icon": "thermometer-water",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 400,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "cdddbe43938fa1dc",
+        "type": "ui-chart",
+        "z": "eeef9c039e59f64e",
+        "group": "cd178e09a80fb3aa",
+        "name": "Gas",
+        "label": "chart",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 850,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a7b32664f33e330",
+        "type": "ui-gauge",
+        "z": "eeef9c039e59f64e",
+        "name": "Gas",
+        "group": "cd178e09a80fb3aa",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "gauge",
+        "units": "",
+        "icon": "molecule-co2",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "1500",
+                "color": "#ffc800"
+            },
+            {
+                "from": "2500",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "4096",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 850,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "f0d991866912c3d9",
+        "type": "mqtt in",
+        "z": "eeef9c039e59f64e",
+        "name": "",
+        "topic": "home/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "fe2295c97ad634b1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "ea816ce845136beb",
+                "bef385df931ca121",
+                "d37b369d93ddf0cb",
+                "f156f89c4121db0b"
+            ]
+        ]
+    },
+    {
+        "id": "0524248bb9a2c3f0",
+        "type": "mqtt in",
+        "z": "eeef9c039e59f64e",
+        "name": "",
+        "topic": "home/humidity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "fe2295c97ad634b1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 260,
+        "wires": [
+            [
+                "46daf851d568a479",
+                "d7552ca9e6e0c777",
+                "877356fbb41db2e6",
+                "ede318f7d4301933"
+            ]
+        ]
+    },
+    {
+        "id": "122007a482e8c3f7",
+        "type": "mqtt in",
+        "z": "eeef9c039e59f64e",
+        "name": "",
+        "topic": "home/gas",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "fe2295c97ad634b1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 620,
+        "y": 260,
+        "wires": [
+            [
+                "cdddbe43938fa1dc",
+                "7a7b32664f33e330",
+                "d7d9e17bedfaa130",
+                "8146d1f80c438db7"
+            ]
+        ]
+    },
+    {
+        "id": "f156f89c4121db0b",
+        "type": "ui-text",
+        "z": "eeef9c039e59f64e",
+        "group": "df73208929ef36e6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Temperature (°C)",
+        "label": "Temperature (°C): ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 430,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ede318f7d4301933",
+        "type": "ui-text",
+        "z": "eeef9c039e59f64e",
+        "group": "1c4e18658b9e07a2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Humadity (%)",
+        "label": "Humadity (%): ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 420,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "8146d1f80c438db7",
+        "type": "ui-text",
+        "z": "eeef9c039e59f64e",
+        "group": "b3a81414e1dc632e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Gas",
+        "label": "Gas value: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 850,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "5e5246d47232c668",
+        "type": "ui-text",
+        "z": "eeef9c039e59f64e",
+        "group": "71d514fb4c02faed",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Temperature (°C) safety",
+        "label": "5(°C) <= Temperature <= 40 (°C)",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 770,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "fb3f0691919c7960",
+        "type": "ui-text",
+        "z": "eeef9c039e59f64e",
+        "group": "71d514fb4c02faed",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Humadity (%) safety",
+        "label": "30% <= Humadity <= 85%",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 760,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "63c7bac5fe18b305",
+        "type": "ui-text",
+        "z": "eeef9c039e59f64e",
+        "group": "71d514fb4c02faed",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Gas danger",
+        "label": "Gas value <= 1800",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 730,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "cfede9f450daf273",
+        "type": "ui-switch",
+        "z": "59548a715e5b82ac",
+        "name": "Switch Light 1",
+        "label": "Switch Light 1",
+        "group": "0d776a416ed024cc",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "decouple": false,
+        "topic": "home/light1",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "label",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 380,
+        "y": 60,
+        "wires": [
+            [
+                "f361728d15946742",
+                "2b8b97a8192e8e0b"
+            ]
+        ]
+    },
+    {
+        "id": "8bb336a8be8c7ef8",
+        "type": "ui-switch",
+        "z": "59548a715e5b82ac",
+        "name": "Switch Light 2",
+        "label": "Switch Light 2",
+        "group": "fa567803259daa00",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": false,
+        "topic": "home/light2",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "label",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "d6ea126457cb872b",
+                "ce792fc5b8974cdb"
+            ]
+        ]
+    },
+    {
+        "id": "4e19f7d14e5545ca",
+        "type": "ui-gauge",
+        "z": "59548a715e5b82ac",
+        "name": "Brightness",
+        "group": "024d452054312c66",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "gauge",
+        "units": "",
+        "icon": "brightness-5",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#e21818"
+            },
+            {
+                "from": "400",
+                "color": "#ffc800"
+            },
+            {
+                "from": "700",
+                "color": "#53ea6c"
+            }
+        ],
+        "min": 0,
+        "max": "1023",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 390,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4b3c2c98982e270b",
+        "type": "mqtt in",
+        "z": "59548a715e5b82ac",
+        "name": "",
+        "topic": "home/LDR",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "fe2295c97ad634b1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 320,
+        "wires": [
+            [
+                "4e19f7d14e5545ca",
+                "9dd785b1dbeb898d",
+                "56e88afca36865cc"
+            ]
+        ]
+    },
+    {
+        "id": "f361728d15946742",
+        "type": "mqtt out",
+        "z": "59548a715e5b82ac",
+        "name": "",
+        "topic": "home/light1",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fe2295c97ad634b1",
+        "x": 570,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d6ea126457cb872b",
+        "type": "mqtt out",
+        "z": "59548a715e5b82ac",
+        "name": "",
+        "topic": "home/light2",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fe2295c97ad634b1",
+        "x": 570,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9dd785b1dbeb898d",
+        "type": "function",
+        "z": "59548a715e5b82ac",
+        "name": "function 13",
+        "func": "let value = parseInt(msg.payload);\n\nif (value <= 700) {\n    msg.payload = \"It's dim\";\n} else {\n    msg.payload = \"It's bright\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "b788e98e42cdadd1"
+            ]
+        ]
+    },
+    {
+        "id": "2b8b97a8192e8e0b",
+        "type": "function",
+        "z": "59548a715e5b82ac",
+        "name": "function 14",
+        "func": "if (msg.payload == true) {\n    msg.payload = \"on\";\n} else {\n    msg.payload = \"off\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 120,
+        "wires": [
+            [
+                "4f55d6da11ba2b31"
+            ]
+        ]
+    },
+    {
+        "id": "ce792fc5b8974cdb",
+        "type": "function",
+        "z": "59548a715e5b82ac",
+        "name": "function 15",
+        "func": "if (msg.payload == true) {\n    msg.payload = \"on\";\n} else {\n    msg.payload = \"off\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 260,
+        "wires": [
+            [
+                "7188c2d1f29ed4f6"
+            ]
+        ]
+    },
+    {
+        "id": "4f55d6da11ba2b31",
+        "type": "ui-template",
+        "z": "59548a715e5b82ac",
+        "group": "0d776a416ed024cc",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"status-container\">\n    <div class=\"light-bulb\" :class=\"{ 'on': status === 'on', 'off': status === 'off' }\"></div>\n    <p\n      class=\"status-text\"\n      :class=\"{\n        'light-on': status === 'on',\n        'light-off': status === 'off'\n      }\"\n    >\n      {{ statusMessage }}\n    </p>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      status: \"\",\n    };\n  },\n  computed: {\n    statusMessage() {\n\n      if (this.status === \"on\") return \"LIGHT ON\";\n      if (this.status === \"off\") return \"LIGHT OFF\";\n      return \"\";\n    },\n  },\n  methods: {\n    updateStatus(msg) {\n      this.status = msg.payload;\n    },\n  },\n  mounted() {\n    this.$watch(\"msg\", (newMsg) => {\n      if (newMsg && newMsg.payload) {\n        this.updateStatus(newMsg);\n      }\n    });\n  },\n};\n</script>\n\n<style scoped>\n.status-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: 200px;\n}\n\n.status-text {\n  font-size: 24px;\n  font-weight: bold;\n  margin-top: 20px;\n  transition: color 0.3s ease;\n}\n\n.status-text.light-on {\n  color: green; \n}\n\n.status-text.light-off {\n  color: red; \n}\n\n.light-bulb {\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  transition: background-color 0.3s ease, box-shadow 0.3s ease;\n}\n\n.light-bulb.on {\n  background-color: yellow;\n  box-shadow: 0 0 20px 5px yellow;\n}\n\n.light-bulb.off {\n  background-color: gray;\n  box-shadow: none;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 780,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7188c2d1f29ed4f6",
+        "type": "ui-template",
+        "z": "59548a715e5b82ac",
+        "group": "fa567803259daa00",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n  <div class=\"status-container\">\n    <div class=\"light-bulb\" :class=\"{ 'on': status === 'on', 'off': status === 'off' }\"></div>\n    <p\n      class=\"status-text\"\n      :class=\"{\n        'light-on': status === 'on',\n        'light-off': status === 'off'\n      }\"\n    >\n      {{ statusMessage }}\n    </p>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      status: \"\", \n    };\n  },\n  computed: {\n    statusMessage() {\n      if (this.status === \"on\") return \"LIGHT ON\";\n      if (this.status === \"off\") return \"LIGHT OFF\";\n      return \"\";\n    },\n  },\n  methods: {\n    updateStatus(msg) {\n      this.status = msg.payload;\n    },\n  },\n  mounted() {\n    this.$watch(\"msg\", (newMsg) => {\n      if (newMsg && newMsg.payload) {\n        this.updateStatus(newMsg);\n      }\n    });\n  },\n};\n</script>\n\n<style scoped>\n.status-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: 200px;\n}\n\n.status-text {\n  font-size: 24px;\n  font-weight: bold;\n  margin-top: 20px;\n  transition: color 0.3s ease;\n}\n\n.status-text.light-on {\n  color: green; \n}\n\n.status-text.light-off {\n  color: red; \n}\n\n.light-bulb {\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  transition: background-color 0.3s ease, box-shadow 0.3s ease;\n}\n\n.light-bulb.on {\n  background-color: yellow;\n  box-shadow: 0 0 20px 5px yellow;\n}\n\n.light-bulb.off {\n  background-color: gray;\n  box-shadow: none;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 780,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b788e98e42cdadd1",
+        "type": "ui-text",
+        "z": "59548a715e5b82ac",
+        "group": "0afd0bd52a321c10",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 590,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "56e88afca36865cc",
+        "type": "function",
+        "z": "59548a715e5b82ac",
+        "name": "function 23",
+        "func": "let value = parseInt(msg.payload);\n\nif (value <= 700) {\n    msg.payload = \"on\";\n} else {\n    msg.payload = \"off\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 320,
+        "wires": [
+            [
+                "4f55d6da11ba2b31",
+                "7188c2d1f29ed4f6"
+            ]
+        ]
+    },
+    {
+        "id": "5868dcc1077902c8",
+        "type": "ui-template",
+        "z": "52ca15396477339d",
+        "group": "07c5be3bfbb6912e",
+        "page": "",
+        "ui": "",
+        "name": "Parking car",
+        "order": 1,
+        "width": "26",
+        "height": "8",
+        "head": "",
+        "format": "<template>\n  <div class=\"grid-container\">\n    <div \n      v-for=\"slot in [1, 2, 3, 4]\" \n      :key=\"slot\" \n      class=\"slot\" \n      :id=\"'slot-' + slot\" \n      :class=\"{ occupied: showImages[slot], reserved: reservedSlots[slot] }\"\n    >\n      <!-- Tiêu đề của slot -->\n      <p class=\"slot-title\">Slot {{ slot }}</p>\n      \n      <!-- Ảnh hiển thị khi slot được chiếm -->\n      <img \n        class=\"slot-img\" \n        :id=\"'img-' + slot\" \n        v-if=\"showImages[slot]\" \n        :src=\"images[slot]\" \n        :alt=\"'Car Slot ' + slot\" \n      />\n      \n      <!-- Trạng thái và đồng hồ đếm thời gian -->\n      <div class=\"slot-info\">\n        <p class=\"slot-status\">\n          {{ showImages[slot] ? \"OCCUPIED\" : reservedSlots[slot] ? \"Reserved\" : \"EMPTY\" }}\n        </p>\n        <p class=\"slot-timer\">Time: {{ formatTime(timers[slot]) }}</p>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      images: {\n        1: \"/car_topview.png\",\n        2: \"/car_topview.png\",\n        3: \"/car_topview.png\",\n        4: \"/car_topview.png\",\n      },\n      showImages: {\n        1: 0,\n        2: 0,\n        3: 0,\n        4: 0,\n      },\n      reservedSlots: {\n        1: 0,\n        2: 0,\n        3: 0,\n        4: 0,\n      },\n      timers: {\n        1: 0,\n        2: 0,\n        3: 0,\n        4: 0,\n      },\n      timerIntervals: {}, // Lưu trữ các interval cho mỗi slot\n      msgPayload: null,\n    };\n  },\n  methods: {\n    updatePayload(msg) {\n      this.msgPayload = msg.payload;\n\n      if (typeof this.msgPayload === \"object\" && this.msgPayload.slot) {\n        const { slot, visible } = this.msgPayload;\n\n        if (slot >= 1 && slot <= 4) {\n          if (visible) {\n            if (this.reservedSlots[slot] === 0) {\n              this.showImages[slot] = 1;\n              this.startTimer(slot); // Bắt đầu đếm thời gian\n            }\n          } else {\n            this.showImages[slot] = 0;\n            this.stopTimer(slot); // Dừng và reset thời gian\n          }\n          this.saveStateToLocalStorage();\n        }\n      } else if (typeof this.msgPayload === \"string\") {\n        // Kiểm tra nếu chuỗi chứa \"reserved\" và phân tích\n        const parts = this.msgPayload.split(\" \");\n        if (parts[0] === \"reserved\") {\n          const slot = parseInt(parts[1]); // Slot là phần sau từ \"reserved\"\n          const status = parts[2]?.trim() === \"true\"; // Trạng thái là true/false\n\n          if (slot >= 1 && slot <= 4) {\n            if (status) {\n              if (this.showImages[slot] === 0) {\n                this.reservedSlots[slot] = 1;  // Đặt ô thành trạng thái reserved\n              }\n            } else {\n              if (this.showImages[slot] === 0) {\n                this.reservedSlots[slot] = 0; // Đặt ô thành trạng thái empty\n              }\n            }\n            this.saveStateToLocalStorage();\n          }\n        } else {\n          // Nếu chuỗi không phải là \"reserved\", xử lý như các chuỗi thông thường\n          const parts = this.msgPayload.split(\":\");\n          const slot = parseInt(parts[0].trim()); // Slot là phần trước dấu \":\"\n          const status = parts[1]?.trim() === \"true\"; // Trạng thái là true/false\n\n          if (slot >= 1 && slot <= 4) {\n            if (status) {\n              if (this.showImages[slot] === 0) {\n                this.showImages[slot] = 1;  // Đặt ô thành trạng thái OCCUPIED\n                this.startTimer(slot); // Bắt đầu đếm thời gian\n              }\n            } else {\n              this.showImages[slot] = 0; // Đặt ô thành trạng thái empty\n              this.stopTimer(slot); // Dừng và reset thời gian\n            }\n            this.saveStateToLocalStorage();\n          }\n        }\n      }\n    },\n    startTimer(slot) {\n      // Nếu đã có interval, không tạo lại\n      if (this.timerIntervals[slot]) return;\n\n      this.timerIntervals[slot] = setInterval(() => {\n        this.timers[slot] += 1; // Tăng thời gian theo giây\n        this.saveStateToLocalStorage();\n      }, 1000);\n    },\n    stopTimer(slot) {\n      // Xóa interval và reset thời gian\n      clearInterval(this.timerIntervals[slot]);\n      this.timerIntervals[slot] = null;\n      this.timers[slot] = 0;\n      this.saveStateToLocalStorage();\n    },\n    formatTime(seconds) {\n      const minutes = Math.floor(seconds / 60);\n      const secs = seconds % 60;\n      return `${String(minutes).padStart(2, \"0\")}:${String(secs).padStart(2, \"0\")}`;\n    },\n    saveStateToLocalStorage() {\n      const state = {\n        showImages: this.showImages,\n        reservedSlots: this.reservedSlots,\n        timers: this.timers,\n      };\n      \n      // Xóa trạng thái cũ trong localStorage và lưu trạng thái mới\n      localStorage.setItem(\"slotState\", JSON.stringify(state));\n    },\n    loadStateFromLocalStorage() {\n      const savedState = localStorage.getItem(\"slotState\");\n      if (savedState) {\n        const state = JSON.parse(savedState);\n        this.showImages = state.showImages || this.showImages;\n        this.reservedSlots = state.reservedSlots || this.reservedSlots;\n        this.timers = state.timers || this.timers;\n\n        // Khôi phục timer nếu slot đang OCCUPIED\n        Object.keys(this.showImages).forEach((slot) => {\n          if (this.showImages[slot]) {\n            this.startTimer(parseInt(slot)); // Bắt đầu lại đồng hồ nếu ô đang chiếm\n          }\n        });\n      }\n    },\n  },\n  mounted() {\n    this.loadStateFromLocalStorage();\n\n    this.$watch(\"msg\", (newMsg) => {\n      if (newMsg) {\n        this.updatePayload(newMsg);\n      }\n    });\n  },\n};\n</script>\n\n<style scoped>\n/* Container Grid */\n.grid-container {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n  gap: 10px;\n  justify-content: center;\n  max-width: 1500px;\n  margin: 0 auto;\n  padding: 20px;\n}\n\n/* Slot Style */\n.slot {\n  border: 1px solid #ccc;\n  border-radius: 10px;\n  padding: 10px;\n  aspect-ratio: 7 / 8;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between; /* Tạo khoảng cách đều giữa các phần tử */\n  background-color: #66cc66;\n  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;\n  box-sizing: border-box;\n}\n\n/* Các trạng thái khác nhau của slot */\n.slot.occupied {\n  background-color: #ff6666;\n}\n\n.slot.reserved {\n  background-color: #ffd700; /* Màu vàng cho trạng thái reserved */\n}\n\n/* Tiêu đề */\n.slot-title {\n  font-weight: bold;\n  text-align: center;\n  margin-bottom: 10px;\n  font-size: 18px;\n}\n\n/* Hình ảnh bên trong slot */\n.slot-img {\n  max-height: 70%;\n  width: 100%;\n  object-fit: contain;\n  display: block;\n}\n\n/* Phần chứa trạng thái và đồng hồ */\n.slot-info {\n  text-align: center;\n  margin-top: 10px;\n  width: 100%;\n}\n\n/* Trạng thái */\n.slot-status {\n  font-size: 16px;\n  font-weight: bold;\n  color: #fff;\n}\n\n/* Đồng hồ */\n.slot-timer {\n  font-size: 16px;\n  font-weight: bold;\n  color: #000;\n  margin-top: 5px;\n}\n\n/* Responsive Design */\n@media (max-width: 1200px) {\n  .grid-container {\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n  }\n}\n\n@media (max-width: 768px) {\n  .grid-container {\n    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  }\n}\n\n@media (max-width: 480px) {\n  .grid-container {\n    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));\n  }\n}\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 690,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42417d930dd6e928",
+        "type": "function",
+        "z": "52ca15396477339d",
+        "name": "function 11",
+        "func": "// Tách số vị trí và trạng thái từ payload\nlet match = msg.payload.match(/^Position (\\d+): (true|false)$/);\nif (match) {\n    let slot = parseInt(match[1]); // Lấy số vị trí\n    let visible = match[2] === \"true\"; // Chuyển đổi trạng thái thành boolean\n    msg.payload = { \"slot\": slot, \"visible\": visible }; \n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "5868dcc1077902c8"
+            ]
+        ]
+    },
+    {
+        "id": "f28fdb4c103212db",
+        "type": "mqtt in",
+        "z": "52ca15396477339d",
+        "name": "",
+        "topic": "home/parking",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "fe2295c97ad634b1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "42417d930dd6e928"
+            ]
+        ]
+    },
+    {
+        "id": "0d09a36b3c1429c1",
+        "type": "ui-switch",
+        "z": "52ca15396477339d",
+        "name": "Reserved 1",
+        "label": "Reserved 1",
+        "group": "0d69953b24dd8e4e",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "b0fba352243e4d21"
+            ]
+        ]
+    },
+    {
+        "id": "b0fba352243e4d21",
+        "type": "function",
+        "z": "52ca15396477339d",
+        "name": "function 19",
+        "func": "if (msg.payload === true) {\n    msg.payload = \"reserved 1: true\"; // Hiển thị ảnh ở Slot 1\n} else {\n    msg.payload = \"reserved 1: false\"; // Ẩn ảnh ở Slot 1\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 60,
+        "wires": [
+            [
+                "5868dcc1077902c8",
+                "e6e29a8289b9853a"
+            ]
+        ]
+    },
+    {
+        "id": "7471849bd60c72ac",
+        "type": "ui-switch",
+        "z": "52ca15396477339d",
+        "name": "Reserved 2",
+        "label": "Reserved 2",
+        "group": "0d69953b24dd8e4e",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 190,
+        "y": 120,
+        "wires": [
+            [
+                "7f6325fa863a0f1c"
+            ]
+        ]
+    },
+    {
+        "id": "7f6325fa863a0f1c",
+        "type": "function",
+        "z": "52ca15396477339d",
+        "name": "function 20",
+        "func": "if (msg.payload === true) {\n    msg.payload = \"reserved 2: true\"; // Hiển thị ảnh ở Slot 1\n} else {\n    msg.payload = \"reserved 2: false\"; // Ẩn ảnh ở Slot 1\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 120,
+        "wires": [
+            [
+                "5868dcc1077902c8",
+                "e6e29a8289b9853a"
+            ]
+        ]
+    },
+    {
+        "id": "87f9e2f166c66951",
+        "type": "ui-switch",
+        "z": "52ca15396477339d",
+        "name": "Reserved 3",
+        "label": "Reserved 3",
+        "group": "0d69953b24dd8e4e",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "64b467e2288f9075"
+            ]
+        ]
+    },
+    {
+        "id": "64b467e2288f9075",
+        "type": "function",
+        "z": "52ca15396477339d",
+        "name": "function 21",
+        "func": "if (msg.payload === true) {\n    msg.payload = \"reserved 3: true\"; // Hiển thị ảnh ở Slot 1\n} else {\n    msg.payload = \"reserved 3: false\"; // Ẩn ảnh ở Slot 1\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "5868dcc1077902c8",
+                "e6e29a8289b9853a"
+            ]
+        ]
+    },
+    {
+        "id": "58314466922cad57",
+        "type": "ui-switch",
+        "z": "52ca15396477339d",
+        "name": "Reserved 4",
+        "label": "Reserved 4",
+        "group": "0d69953b24dd8e4e",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "d7fbd23e5faf0e14"
+            ]
+        ]
+    },
+    {
+        "id": "d7fbd23e5faf0e14",
+        "type": "function",
+        "z": "52ca15396477339d",
+        "name": "function 22",
+        "func": "if (msg.payload === true) {\n    msg.payload = \"reserved 4: true\"; // Hiển thị ảnh ở Slot 1\n} else {\n    msg.payload = \"reserved 4: false\"; // Ẩn ảnh ở Slot 1\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 240,
+        "wires": [
+            [
+                "5868dcc1077902c8",
+                "e6e29a8289b9853a"
+            ]
+        ]
+    },
+    {
+        "id": "e6e29a8289b9853a",
+        "type": "mqtt out",
+        "z": "52ca15396477339d",
+        "name": "",
+        "topic": "home/reserved_pos",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fe2295c97ad634b1",
+        "x": 720,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "74e5e8e7781173d7",
+        "type": "function",
+        "z": "52ca15396477339d",
+        "name": "function 24",
+        "func": "if (msg.payload == true) {\n    msg.payload = { \"slot\": 3, \"visible\": true};\n} else {\n    msg.payload = { \"slot\": 3, \"visible\": false};\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 400,
+        "wires": [
+            [
+                "5868dcc1077902c8"
+            ]
+        ]
+    },
+    {
+        "id": "9c1b5722aa577f36",
+        "type": "ui-switch",
+        "z": "52ca15396477339d",
+        "name": "",
+        "label": "switch",
+        "group": "07c5be3bfbb6912e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "74e5e8e7781173d7"
+            ]
+        ]
+    }
+]
