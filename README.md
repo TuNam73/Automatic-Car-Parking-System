@@ -17,7 +17,7 @@ Kinh nghiệm từ các thành phố lớn: Nhiều thành phố hiện đại �
 # Nội dung chính
 
 1. Phần cứng
-- Vi điều khiển: ESP32
+- Vi điều khiển: MH-ET LIVE MiniKit for ESP32
 - Cửa vào/ra: 
     + 2 x Servo SG90: Điều khiển đóng/mở ở 2 cửa
     + 2 x Cảm biến phát hiện vật cản: Phát hiện xe vào/ra
@@ -49,7 +49,7 @@ Kinh nghiệm từ các thành phố lớn: Nhiều thành phố hiện đại �
 	+ Đo nhiệt độ, độ ẩm, khí ga của bãi đỗ xe + buzzer cảnh báo khi gặp nguy hiểm
 	+ Hiển thị nhiệt độ, độ ẩm, khí ga lên dashboard
 
-# Sơ đồ khối dự kiến
+# Sơ đồ khối
 1. Sơ đồ khối
 ![Hình 1](./images/3.png)
 
@@ -62,25 +62,72 @@ Kinh nghiệm từ các thành phố lớn: Nhiều thành phố hiện đại �
 
 ![Hình 3](./images/2.png)
 
-# Mục tiêu của đề tài
+# Sơ đồ chân
+Sơ đồ chân được mô phỏng trên phần mềm Fritzing
+![Hình 9](./images/9.png)
 
-Xây dựng một hệ thống bãi đỗ xe thông minh đáp ứng nhu cầu thực tế, bao gồm:
+Bảng kết nối với các chân của esp32
+
+| Thiết bị   | Chân          | ESP32         |
+|------------|---------------|---------------|
+| **Servo**  | Vcc           | 5V            |
+|            | GND           | GND           |
+|            | PWM entry     | 4             |
+|            | PWM exit      | 2             |
+| **HC-SR04**| Vcc           | 5V            |
+|            | GND           | GND           |
+| Entry      | trig          | 17            |
+|            | echo          | 16            |
+| Exit       | trig          | 33            |
+|            | echo          | 14            |
+| Pos 1      | trig          | 26            |
+|            | echo          | 13            |
+| Pos 2      | trig          | 19            |
+|            | echo          | 18            |
+| Pos 3      | trig          | 23            |
+|            | echo          | 5             |
+| Pos 4      | trig          | 32            |
+|            | echo          | 12            |
+| **DHT**    | Vcc           | 5V            |
+|            | GND           | GND           |
+|            | Data          | 10            |
+|   **MQ2**  | Vcc           | 5V            |
+|            | GND           | GND           |
+|            | Analog Out    | 35            |
+|**LDR**     | Vcc           | 3.3V          |
+|            | GND           | GND           |
+|            | Analog Out    | 39            |
+| **LED**    | LED 1         | 25            |
+|            | LED 2         | 15            |
+| **Buzzer** | Signal        | 9             |
+
+## Kết quả 
+1. Mô hình:
+![Hình 8](./images/8.png)
+
+2. Node-red dashboard 2.0
+- Node-red dashboard gồm 5 group: Home, Door Status, Position, Temperature/Humadity/Gas, Brightness
+![Hình h1](./images/h1.png)
+- Trên giao diện **Home** được hiển thị số lượng xe, thống kê số lượng xe theo thời gian, giờ hiện tại(theo giờ Việt Nam), tác giả, kiểm tra kết nối MQTT
+![Hình h2](./images/h2.png)
+- Giao diện **Door Status** được dùng để hiển thị và điều khiển trạng thái cửa vào/ra của bãi đỗ xe
+![Hình h3](./images/h3.png)
+- Giao diện **Position** gồm các chức năng:
+    + Kiểm tra trạng thái từng vị trí: Trống (Empty), Đã có xe (Occupied), Đã được đặt trước (Reserved)
+    + Đặt trước chỗ trên các vị trí trống
+    + Nếu vị trí đã có xe: tính thời gian xe đặt tại vị trí đó
+![Hình 4](./images/4.png)
+- Giao diện **Temperature/Humidity/Gas** để hiển thị nhiệt độ, độ ẩm và giá trị đo được từ cảm biến khí gas, đồng thời thống kê các giá trị đó theo thời gian
+![Hình 5](./images/5.png)
+- Giao diện **Brightness** được dùng để hiển thị trạng thái đèn, trạng thái sáng tối của bãi đỗ xe và điều khiển đèn bật/tắt
+![Hình 6](./images/6.png)
+
+## Kết luận
+Đã xây dựng thành công một hệ thống bãi đỗ xe thông minh với các chức năng:
 - Quản lý vị trí đỗ xe, số lượng xe và thời gian đỗ.
 - Phát hiện cháy nổ hoặc sự cố bất thường (khói, nhiệt độ cao).
 - Tự động hóa quá trình ra/vào bằng cảm biến và cửa servo.
 - Tích hợp dashboard qua Node-RED để hiển thị và điều khiển.
-- Chi phí thấp, dễ lắp đặt và triển khai.
 
-## Project giữa kì
-1. Mô hình:
-![Hình 4](./images/12.jpg)
 
-2. Node-red edit
-![Hình 5](./images/10.png)
-![Hình 6](./images/11.png)
-
-3. Node-red dashboard 2.0
-![Hình 7](./images/8.png)
-![Hình 8](./images/9.png)
-
-4. Video demo: [Video youtube](https://www.youtube.com/shorts/EwfClbjN2_Q)
+## Video demo: [Video demo](https://youtu.be/6vYeLfkQ3tU)
