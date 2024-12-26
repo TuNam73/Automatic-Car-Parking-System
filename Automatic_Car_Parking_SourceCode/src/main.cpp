@@ -27,7 +27,7 @@ const int trigPin4 = 19; //Pos2 detect
 const int echoPin4 = 18;
 const int trigPin5 = 23; //Pos3 detect
 const int echoPin5 = 5;
-const int trigPin6 = 32; //Pos detect
+const int trigPin6 = 32; //Pos4 detect
 const int echoPin6 = 12; 
 
 //Pin of Servo
