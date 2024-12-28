@@ -37,9 +37,9 @@ namespace MQTT
 
     void reconnect(PubSubClient &mqttClient, const char *client_id,
                    const char *username, const char *password,
-                   const char *subscribe_topic1, const char *subscribe_topic2)
+                   const char *subscribe_topic1, const char *subscribe_topic2, const char *subscribe_topic3, const char *subscribe_topic4)
     {
-        const char *subscribe_topics[] = {subscribe_topic1, subscribe_topic2};
-        reconnect(mqttClient, client_id, username, password, subscribe_topics, 2);
+        const char *subscribe_topics[] = {subscribe_topic1, subscribe_topic2, subscribe_topic3, subscribe_topic4};
+        reconnect(mqttClient, client_id, username, password, subscribe_topics, 4);
     }
 } // namespace MQTT

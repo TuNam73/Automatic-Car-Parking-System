@@ -117,20 +117,15 @@ void brightness() {
   mqttClient.publish(LDR_brighness_topic, String(ldr_value).c_str(), false);
   Serial.print("Brightness: ");
   Serial.print(ldr_value);
-  if (!control_led) {
-    if (ldr_value < 700) {
-      digitalWrite(ledPin1, HIGH);
-      digitalWrite(ledPin2, HIGH);
-      Serial.println(". It's dim");
-    }
-    else {
-      digitalWrite(ledPin1, LOW);
-      digitalWrite(ledPin2, LOW);
-      Serial.println(". It's bright");
-    }
+  if (ldr_value < 700) {
+    digitalWrite(ledPin1, HIGH);
+    digitalWrite(ledPin2, HIGH);
+    Serial.println(". It's dim");
   }
   else {
-    Serial.println("Control led from dashboard");
+    digitalWrite(ledPin1, LOW);
+    digitalWrite(ledPin2, LOW);
+    Serial.println(". It's bright");
   }
 }
 
@@ -356,10 +351,9 @@ void setup() {
 }
 
 void loop() {
-  MQTT::reconnect(mqttClient, client_id, EMQX::username, EMQX::password, handle_entry_topic, handle_exit_topic);
+  MQTT::reconnect(mqttClient, client_id, EMQX::username, EMQX::password, handle_entry_topic, handle_exit_topic, light_topic1, light_topic2);
   mqttClient.loop();
-  handleDoor(servo1, trigPin1, echoPin1, 1);
-  handleDoor(servo2, trigPin2, echoPin2, -1);
+  statusDoor(servo1, trigPin1, echoPin1, 1, servo2, trigPin2, echoPin2, -1);
   if (handle_parking_flag) {
     handle_parking_flag = false;
     handle_parking();          
