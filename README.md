@@ -131,4 +131,4 @@ Reserve available spots.
 
 - The MQTT protocol has been successfully implemented to transmit and receive data between system components via brokers like HiveMQ or EMQX.
 
-## Video demo: [Video demo](https://www.youtube.com/watch?v=NGZ4Gfc5JMc)
+## Video demo: [Video demo](https://youtu.be/jeAfQWTr_tE)
